@@ -1,0 +1,166 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+  font-family:Georgia, serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+  height:80px;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 50px;
+}
+
+.logo{
+  font-size:42px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-family:Arial, sans-serif;
+}
+
+.btn{
+  background:white;
+  color:black !important;
+  padding:12px 24px;
+  border-radius:30px;
+}
+
+/* HOME PAGE */
+
+.home-container{
+  padding:60px;
+}
+
+.main-title{
+  font-size:70px;
+  margin-bottom:50px;
+}
+
+.poem-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.poem-card{
+  background:#171717;
+  border-radius:20px;
+  overflow:hidden;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.poem-card:hover{
+  transform:translateY(-5px);
+}
+
+.poem-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.card-content h2{
+  margin-bottom:10px;
+  font-size:32px;
+}
+
+.card-content p{
+  color:#bcbcbc;
+}
+
+/* POEM PAGE */
+
+.poems-container{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  min-height:calc(100vh - 80px);
+}
+
+.poem-content{
+  padding:60px;
+}
+
+.reading-tag{
+  color:#35c759;
+  font-family:Arial;
+}
+
+.poem-content h1{
+  font-size:82px;
+  margin:20px 0;
+}
+
+.poem-content h4{
+  font-size:28px;
+  color:#bcbcbc;
+  margin-bottom:40px;
+}
+
+.poem-text p{
+  font-size:28px;
+  line-height:1.8;
+  margin-bottom:45px;
+}
+
+.video-panel{
+  border-left:1px solid rgba(255,255,255,0.1);
+  padding:50px 30px;
+}
+
+.video-panel h2{
+  font-size:48px;
+  margin-bottom:40px;
+}
+
+.video-card{
+  position:relative;
+  display:block;
+  border-radius:24px;
+  overflow:hidden;
+}
+
+.video-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+.play-button{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:90px;
+  height:90px;
+  background:rgba(0,0,0,0.6);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:40px;
+}
